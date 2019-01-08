@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
     <title>Nuestros Servicios</title>
-  </head>
+  <link type="text/css" rel="stylesheet" href="../ejerciciosTema4/CSS/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="../ejerciciosTema4/CSS/miCss.css"></head>
   <body>
-    <nav> <a name="principiopaginaweb"></a> <a href="nosotros.html">Nosotros</a><br>
-      <a href="../index.html">Index</a><br>
-      <a href="https://github.com/ppa04/ppa04.github.io">Repositorio</a><br>
-      <a href="mailto:pilar.pardo@ua.es">Correo electrónico</a><br>
-      <a href="#finalpaginaweb">Final página web</a> </nav>
-    <h1> Nuestros servicios </h1>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="form-inline">
+        <input class="form-control" placeholder="Buscar..." type="text"><button class="btn btn-outline-success" type="submit">
+        Buscar!
+        </button>
+      </form>
+      <div class="collapse navbar-collapse">
+      <a href="nosotros.html" class="navbar-brand">Nosotros</a><br>
+      <a href="../index.html" class="navbar-brand">Index</a><br>
+      <a href="https://github.com/ppa04/ppa04.github.io" class="navbar-brand">Repositorio</a><br>
+      <a href="mailto:pilar.pardo@ua.es" class="navbar-brand">Correo electrónico</a><br>
+      <a href="#finalpaginaweb" class="navbar-brand">Final página web</a>    
+      </div>
+    </nav>
+      <a name="principiopaginaweb"></a>
+    <header class="row">
+      <h1 class="col-md-10 col-sm-6 col-12" id="cabecera">BIENVENIDO A NUESTRA WEB!</h1>
+      <picture class="col-md-2 col-sm-6 col-12"><img src="imagenes/logo_empresa.jpg" alt="logotipo de mi empresa" height="250"></picture>
+    </header>
+    <section class="row">
+    <header class="col-md-12 col-sm-12 col-12">
+      <h1> Nuestros servicios </h1>
+    </header>
+      <article class="col-md-4 col-sm-12 col-12">
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus
       elit eget enim aliquam, non pulvinar orci venenatis. Vestibulum ante ipsum
       primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut
@@ -18,18 +41,25 @@
       Aliquam lacinia laoreet libero, non ornare turpis volutpat et. Donec quis
       neque ac sapien elementum ultricies eget quis est. Suspendisse eu dolor
       maximus ipsum pellentesque pharetra aliquam in metus. Interdum et
-      malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit
+      malesuada fames ac ante ipsum primis in faucibus. </p>
+        </article>
+      <article class="col-md-4 col-sm-12 col-12">
+    <p> Lorem ipsum dolor sit
       amet, consectetur adipiscing elit. Morbi sem mauris, eleifend vitae
-      viverra in, tincidunt quis ante. Vestibulum ac ultricies augue. </p>
-    <p> Donec porttitor dapibus sapien, eget pharetra nisl sagittis sit amet.
+      viverra in, tincidunt quis ante. Vestibulum ac ultricies augue. Donec porttitor dapibus sapien, eget pharetra nisl sagittis sit amet.
       Aliquam pretium tincidunt feugiat. Vestibulum quam erat, auctor sed ligula
       et, bibendum congue neque. Phasellus mauris erat, vulputate at massa vel,
-      placerat luctus augue. Fusce vestibulum, neque nec pulvinar mattis, risus
+      placerat luctus augue.</p>
+      </article>
+      <article class="col-md-4 col-sm-12 col-12">
+      <p>Fusce vestibulum, neque nec pulvinar mattis, risus
       leo ultricies eros, id scelerisque ex sem at justo. Class aptent taciti
       sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
       Donec sit amet efficitur elit. Nulla facilisi. Pellentesque mattis felis
       vel ipsum dignissim pellentesque. Phasellus facilisis dictum lectus non
       mattis. Vivamus facilisis nisi eu libero porta ornare. </p>
+        </article>
+      </section>
     <h1> Rutas de 1 día </h1>
     <p> Duis at egestas purus, sit amet sodales erat. Morbi mi magna, tempor eu
       diam at, blandit viverra urna. Phasellus dignissim nulla rutrum, sagittis
@@ -145,7 +175,7 @@
       sapien rutrum varius aliquet ac orci. Aliquam lectus dolor, consectetur
       vel accumsan sed, viverra a tellus. Nulla facilisis, ligula at suscipit
       euismod, velit lorem lacinia massa, a interdum mauris sem in lorem. </p>
-    <h1> Escalada iniciación </h1>
+    <h2> Escalada iniciación </h2>
     <p> Nam ac facilisis nulla. Suspendisse consequat fermentum ligula eu
       lacinia. Aenean dapibus orci ut dui finibus eleifend. Proin consectetur
       rutrum enim, sed luctus dolor suscipit eget. Pellentesque tristique, elit
@@ -190,7 +220,7 @@
       elit tincidunt augue, non ornare lectus nibh ac sapien. Morbi vehicula,
       ligula in aliquam molestie, metus diam commodo nisl, dapibus porttitor leo
       diam in urna. Praesent sodales erat fringilla velit tincidunt posuere. </p>
-    <h1> Combinado trekking y ferratas </h1>
+    <h3> Combinado trekking y ferratas </h3>
     <p> Praesent quis sapien enim. Fusce molestie tincidunt orci, eget efficitur
       sem cursus a. Donec luctus aliquam tincidunt. Sed cursus euismod nisi, id
       euismod nisl malesuada non. Aliquam vel velit fermentum, efficitur nisl
@@ -218,6 +248,9 @@
       ligula nec, vestibulum sem. Nulla eros enim, sodales at erat ut, faucibus
       tincidunt est. </p>
     <a name="finalpaginaweb"></a> <a href="#principiopaginaweb">Principio
-      página web</a>
-  </body>
-</html>
+      página web</a><br><br>
+        <footer>
+      <p>Copyright</p>
+      <p>Social Media Links</p>
+    </footer>
+</body></html>
